@@ -1,0 +1,161 @@
+.liquid-bg-icon {
+  position: absolute;
+  top: 0;
+  left: 788.76px;
+  width: 1121.23px;
+  height: 949.51px;
+  opacity: 0.1;
+  mix-blend-mode: normal;
+}
+.vector-icon {
+  position: absolute;
+  top: 202.74px;
+  left: 609px;
+  width: 743px;
+  height: 399px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.nam-sollicitud-nunc,
+.sed-imperdiet-enim {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+}
+.sed-imperdiet-enim {
+  margin: 0;
+  top: 0;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  width: 596px;
+  height: 131px;
+}
+.nam-sollicitud-nunc {
+  top: 155.26px;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.54);
+  width: 578px;
+  height: 97px;
+}
+.text {
+  position: absolute;
+  top: 290.74px;
+  left: 0;
+  width: 596px;
+  height: 252.26px;
+}
+.banner,
+.login {
+  position: absolute;
+  font-family: "Open Sans";
+  text-align: left;
+}
+.banner {
+  top: 18px;
+  left: 91px;
+  width: 1909.99px;
+  height: 949.51px;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.87);
+}
+.login {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 18.49%;
+  top: calc(50% - 11.08px);
+  left: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #d2d2d2;
+  display: inline-block;
+}
+.rectangle,
+.see-detail {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.rectangle {
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 39px;
+  background-color: #673ab7;
+}
+.see-detail {
+  top: calc(50% - 11.08px);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Open Sans";
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+}
+.buttonflatprimary {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 100%;
+  width: 39.04%;
+  top: 0;
+  right: 31.85%;
+  bottom: 0;
+  left: 29.11%;
+}
+.line-icon {
+  position: absolute;
+  height: 65.36%;
+  width: 0.68%;
+  top: 19.24%;
+  right: 20.55%;
+  bottom: 15.4%;
+  left: 78.76%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.shape-icon {
+  position: relative;
+  width: 29px;
+  height: 29.87px;
+}
+.android-settings {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 74.36%;
+  width: 9.93%;
+  top: 15.38%;
+  right: 0;
+  bottom: 10.26%;
+  left: 90.07%;
+}
+.option {
+  position: absolute;
+  height: 3.92%;
+  width: 20.28%;
+  top: 1.76%;
+  right: 3.4%;
+  bottom: 94.32%;
+  left: 76.32%;
+  overflow: hidden;
+}
+.desktop-4 {
+  position: relative;
+  background-color: #17181c;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+}
