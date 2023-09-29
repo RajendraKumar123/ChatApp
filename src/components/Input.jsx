@@ -14,6 +14,7 @@ import { db, storage } from "../firebase";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 
+
 const Input = () => {
   const [text, setText] = useState("");
   const [img, setImg] = useState(null);
@@ -73,16 +74,22 @@ const Input = () => {
     setText("");
     setImg(null);
   };
+
+  const handleKey = (e) => {
+    e.code === "Enter" && handleSend();
+  };
+
   return (
     <div className="input">
       <input
         type="text"
         placeholder="Type something..."
         onChange={(e) => setText(e.target.value)}
+        onKeyDown={handleKey}
         value={text}
       />
       <div className="send">
-        {/* <img src={Attach} alt="" />
+        {/* <img src={Attach} alt="" /> */}
         <input
           type="file"
           style={{ display: "none" }}
@@ -91,7 +98,7 @@ const Input = () => {
         />
         <label htmlFor="file">
           <img src={Img} alt="" />
-        </label> */}
+        </label>
         <button onClick={handleSend}>Send</button>
       </div>
     </div>
