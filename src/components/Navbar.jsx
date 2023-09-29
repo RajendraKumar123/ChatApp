@@ -10,9 +10,11 @@ const Navbar = () => {
     <div className='navbar'>
       <span className="logo">AY Chat</span>
       <div className="user">
-        {/* <img src={currentUser.photoURL} alt="" /> */}
+        <img src={currentUser.photoURL} alt="" />
         <span>{currentUser.displayName}</span>
-        <button onClick={()=>signOut(auth)}>logout</button>
+      </div>
+      <div>
+        <button className = "logout-button" onClick={()=>signOut(auth)}>logout</button>
       </div>
     </div>
   )
