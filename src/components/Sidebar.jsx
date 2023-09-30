@@ -2,11 +2,21 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Search from "./Search";
 import Chats from "./Chats";
+import { useNavigate } from "react-router-dom";
 
 function TabSwitcher() {
   const [activeTab, setActiveTab] = useState('tab1');
-
+  const navigate = useNavigate();
   const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    if (tab === 'tab2') {
+      navigate("/news")
+
+    }
+    else{
+      navigate("/")
+      
+    }
     setActiveTab(tab);
   };
 
