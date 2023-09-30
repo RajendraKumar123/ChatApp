@@ -44,9 +44,7 @@ const Login = () => {
             <span></span>
             <span></span>
             <span></span>
-            {/* <img src={mssignin} alt="microsoft signin" /> */}
           </p>
-        {/* <h2 className="welcomemsg">Welcome Back . . .</h2> */}
         <h3 className="registerlink">Don't have an account yet? <Link to = '/register'>Register here!</Link></h3>
       </div>
       <div className="login-box">

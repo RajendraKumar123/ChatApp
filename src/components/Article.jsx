@@ -1,7 +1,4 @@
 import React from 'react';
-import Messages from './Messages';
-import Input from './Input';
-import image from '../images/ay.jpg';
 const Article = () => {
   const title = "The Importance of Exercise";
   const author = "John Doe";
@@ -27,7 +24,6 @@ const Article = () => {
     <div className="message">
         <h1>News</h1>
         </div>
-        {/* News */}
     <div className="message">
         <h1>RK Technical News</h1>
       </div>
@@ -51,7 +47,6 @@ const Article = () => {
       />
 
       </div>
-      {/* </div> */}
   </div>
   );
 };

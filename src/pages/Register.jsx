@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import Add from "../img/addAvatar.png";
-// const fs = require('fs');
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
-import image from "../images/ay.jpg";
-// import ;
+
 const Register = () => {
   const [err, setErr] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -23,22 +21,18 @@ const Register = () => {
     
 
     try {
-      //Create user
       const res = await createUserWithEmailAndPassword(auth, email, password);
 
-      //Create a unique image name
       const date = new Date().getTime();
       const storageRef = ref(storage, `${displayName + date}`);
 
       await uploadBytesResumable(storageRef, file).then(() => {
         getDownloadURL(storageRef).then(async (downloadURL) => {
           try {
-            //Update profile
             await updateProfile(res.user, {
               displayName,
               photoURL: downloadURL,
             });
-            //create user on firestore
             await setDoc(doc(db, "users", res.user.uid), {
               uid: res.user.uid,
               displayName,
@@ -46,7 +40,6 @@ const Register = () => {
               photoURL: downloadURL,
             });
 
-            //create empty user chats on firestore
             await setDoc(doc(db, "userChats", res.user.uid), {});
             navigate("/");
           } catch (err) {
@@ -96,9 +89,7 @@ const Register = () => {
               <span></span>
               <span></span>
               <span></span>
-              {/* <img src={mssignin} alt="microsoft signin" /> */}
             </p>
-          {/* <h2 className="welcomemsg">Welcome Back . . .</h2> */}
           <h3 className="registerlink">Don't have an account yet? <Link to = '/login'>Login here!</Link></h3>
         </div>
         <div className="login-box">
@@ -124,16 +115,7 @@ const Register = () => {
           </label>
           <button disabled={loading}>Sign up</button>
           {loading && "Uploading and compressing the image please wait..."}
-          {err && <span>Something went wrong</span>}
-
-            {/* <button onClick={handleSubmit}>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Submit
-            </button> */}
-            
+          {err && <span>Something went wrong</span>}            
           </form>
         </div>
       </div>

@@ -47,9 +47,6 @@ function TabSwitcher() {
           </div>
         ) : (
           <div>
-            {/* Add your content for Tab 2 here */}
-
-            {/* span some chat names*/}
             <div className="news-thread-info">
               <span>News 1</span>
               <span>News 2</span>
@@ -59,11 +56,7 @@ function TabSwitcher() {
               <span>News 6</span>
               <span>News 7</span>
               <span>News 8</span>
-            </div>
-
-
-
-            
+            </div>          
           </div>
         )}
       </div>
