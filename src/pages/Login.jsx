@@ -54,7 +54,7 @@ const Login = () => {
         <form>
           <div className="user-box">
             <input type="text" value={email} onChange={handleEmailChange} name="" required="" />
-            <label>Username</label>
+            <label>Email</label>
           </div>
           <div className="user-box">
             <input type="password" value={password}
